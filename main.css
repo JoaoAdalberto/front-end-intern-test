@@ -5,8 +5,74 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
 
+.nav-bar{
+  background-color: #acd0b6;
+}
+
+/* Set da logo para o meio, adiciona o espaçamento entre o topo e a parte de baixo da nav-bar */
+.logo{
+  display: block;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+/* Set do background  */
+body {
+  margin: 0px;
+  padding: 0px;
+  background: url(./assets/04-BG.png)
+  
+}
+
+/* Coloca tanto o texto central, como o formulário para o meio da tela, no formato de coluna */
+.area-central{
+  display:flex;
+  flex-direction: column;
+  align-items: center
+}
+
+/* Configura o texto principal */
 h1 {
     font-family: 'Cookie', cursive;
     font-size: 71px;
-    color: purple;
+    font-weight: lighter;
+    color: #e2edcb;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 430px;
+}
+
+/* Set do formulario em si no formato de coluna e o espaço dos inputs para ficar simétrico com o texto central */
+#contact{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 430px;
+}
+
+/* Set da fonte dos inputs e da área de texto, os espaçamentos e também da borda redonda */
+input, textarea {
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  font-size: 18px;
+  padding: 13px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;  
+}
+
+/* Set do tamanho da area de texto */
+.formulario textarea {
+  height: 120px;
+}
+
+/* Set do botão de envio */
+.botao-enviar {
+  background-color: #71a397;
+  font-family: 'Open Sans';
+  font-weight: bolder;
+  font-size: 22px;
+  color: white;
+  border-bottom: 8px #4a8979 solid;
+  text-transform: uppercase;
 }

@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./main.css">
     <title>GreenCity</title>
 </head>
+<header>
+    <nav class = "nav-bar">
+        <img class="logo" src = "./assets/06-LOGO.png" >
+    </nav>
+</header>
 <body>
-    <h1>Hello World</h1>
-
-    <!-- Recomendamos que você não altere os IDs dos elementos do formulário -->
-    <form id="contact" action="#">
-        <input type="text" id="name" placeholder="Nome">
-        <input type="text" id="email" placeholder="Endereço de email">
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
-        <input type="submit" value="Enviar">
-    </form>
-
+    <div class="area-central">
+        <h1>Vem tomar um café com a gente</h1>
+        <div class = "formulario">
+            <form id="contact" action="#">
+                <input type="text" id="name" placeholder="Nome">
+                <input type="text" id="email" placeholder="Email">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                <input class ="botao-enviar" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
